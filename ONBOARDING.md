@@ -392,9 +392,7 @@ cd arena-shooter-3d
 
 ## 步骤 3:发布到 game.boobank.com/arena-shooter/
 
-**前置**:在 Godot 里 `项目 → 导出 → Web → 导出项目`(覆盖 `docs/`)
-
-然后一行:
+一行命令搞定 —— **不用手动 export**,`deploy.sh` 会自己用 headless Godot 重打包:
 
 ```bash
 cd ~/projects/arena-shooter-3d
@@ -407,9 +405,15 @@ source ~/.zshrc
 ./deploy.sh
 ```
 
-`deploy.sh` 会自动:`git push` → ssh 上 VPS → `git pull` → 重建资源缓存 → 重启游戏服务器。
+`deploy.sh` 自动做的事:
+1. 检测 `scripts/` / `scenes/` / `audio/` 等有没有比 `docs/index.pck` 新的文件
+2. 有 → 调 Godot 重新 export 网页版(约 30-60 秒)
+3. 没 → 跳过(约 5 秒)
+4. commit + push 源码 → ssh 上 VPS → `git pull` → 重建 import 缓存 → 重启游戏服务器
 
-**5 秒后**让玩家硬刷新浏览器即可。
+**完事后让玩家硬刷新浏览器(⌘+Shift+R)就能看到新版本。**
+
+> 💡 deploy.sh 用 headless 模式跑 Godot,**不会弹 GUI**。前提是你 Mac 上装了 Godot 4.6.2(到 `/Applications/` 或 `~/Downloads/` 都行),并且**装了 Web 导出模板**(在 Godot 编辑器里:**编辑器 → 管理导出模板 → 下载**,只装一次)。
 
 ---
 
