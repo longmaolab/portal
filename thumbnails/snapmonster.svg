@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 120 120" role="img" aria-label="SnapMonster">
+  <title>SnapMonster</title>
+  <!-- 品牌方向 C · Chonk 独角小獠牙壮怪（用户 2026-06-07 选定）。纯图标·圆角方版，与 favicon 同款。 -->
+  <defs>
+    <radialGradient id="smc-bg" cx="50%" cy="34%" r="78%">
+      <stop offset="0" stop-color="#CDEEDE"/><stop offset="1" stop-color="#7FD6A8"/>
+    </radialGradient>
+  </defs>
+  <rect x="4" y="4" width="112" height="112" rx="28" fill="url(#smc-bg)" stroke="#2B2540" stroke-width="5"/>
+  <path d="M60 14 l9 22 h-18 Z" fill="#FFC83D" stroke="#2B2540" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M36 44 H84 a10 10 0 0 1 10 10 V84 a14 14 0 0 1 -14 14 H40 a14 14 0 0 1 -14 -14 V54 a10 10 0 0 1 10 -10 Z" fill="#3FB877" stroke="#2B2540" stroke-width="5"/>
+  <circle cx="24" cy="74" r="8" fill="#3FB877" stroke="#2B2540" stroke-width="4"/>
+  <circle cx="96" cy="74" r="8" fill="#3FB877" stroke="#2B2540" stroke-width="4"/>
+  <circle cx="50" cy="64" r="10" fill="#fff" stroke="#2B2540" stroke-width="4"/>
+  <circle cx="70" cy="64" r="10" fill="#fff" stroke="#2B2540" stroke-width="4"/>
+  <circle cx="51" cy="65" r="4.5" fill="#2B2540"/><circle cx="71" cy="65" r="4.5" fill="#2B2540"/>
+  <path d="M50 82 q10 9 20 0" fill="none" stroke="#2B2540" stroke-width="4" stroke-linecap="round"/>
+  <path d="M58 84 v7 l4 -3 Z" fill="#fff" stroke="#2B2540" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>
