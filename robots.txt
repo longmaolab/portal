@@ -1,0 +1,8 @@
+# boobank games — everything here is meant to be found.
+# Cloudflare serves a comment-only robots.txt when the origin has none; this
+# file replaces it so the Sitemap line actually reaches crawlers.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://game.boobank.com/sitemap.xml
